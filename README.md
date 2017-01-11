@@ -14,10 +14,17 @@ DTS MA/Core7.1 48.0kHz
 
 ## THAUJ-crf22.h264
 ```sh
-$ ffmpeg -i THAUJ.mkv -c:v libx264 -preset slow -crf 22 -an THAUJ-crf22.h264
+$ ffmpeg -i THAUJ.mkv -c:v libx264 -preset slow -crf 22 -an THAUJ-crf22-1080p.h264
 ```
 
 12s 10.4M   
 AVC CRF22 High@L5 1080p   
 
-##
+## THAUJ-crf22-1080p.hevc
+
+```sh
+ffmpeg -i THAUJ.mkv -c:v libx265 -preset slow -crf 22 -an THAUJ-crf22-1080p.hevc
+```
+
+12s 8.45M   
+HEVC CRF22 Main@L4 1080P
